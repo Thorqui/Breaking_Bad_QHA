@@ -1,0 +1,139 @@
+
+/* Fondo de pantalla */
+body {
+    background-image: url(img/fondo.jpg);
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+}
+@font-face {
+    font-family: breaking;
+    src: url(img/Breaking\ Bad.ttf);
+}
+h1{
+    font-family: Helvetica, sans-serif;
+    font-size: 40;
+}
+h6{
+    font-family: Helvetica, sans-serif;
+    font-size: 10;
+}
+
+/* Logo de la serie */
+.logo {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Contenedor del poster */
+.poster-container {
+    position: relative;
+    display: inline-block;
+}
+
+
+/* Poster */
+.poster {
+    width: 700px;
+    height: 300px;
+    border: 10px outset brown;
+    border-radius: 22px;
+}
+
+
+/* Zona de "Breaking" */
+#breaking {
+    left: 0;
+}
+
+/* Zona de "Bad" */
+#bad {
+    right: 0;
+}
+
+/* Cita */
+.quote {
+    margin-top: 20px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+
+
+.table{
+    margin: px;
+    text-align: center;
+}
+
+
+/*Formulario*/
+.contenedor{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: baseline;
+}
+.contenedor .form {
+    width: 80%;
+    padding: 5px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(166, 33, 33, 0.1);
+}
+.contenedor .form h2 {
+    font-size: 1.0rem;
+    text-align: left;
+    margin-bottom: 10%;
+}
+
+.contenedor .form input {
+    display: block;
+    margin: 5px auto;
+    padding: 10px;
+    width: 75%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.contenedor .form input:focus {
+    border-color: rgb(7, 7, 18);
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+}
+
+/*Formulario
+.button, input, select, textarea{
+    font-family: inherit;
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*/
+
+
+/*Tamaño imagen Logo: Altura y Anchura: 200 pixels
+✓ Tamaño imagen Poster: Altura: 
+o Tamaño de anchura: 700px
+o Tamaño de altura: 300px
+o El borde tiene un grosor de 10px, tipo outset y color Brown.
+o Tiene que estar redondeado las cuatro esquinas 22px.
+
+Color de fondo páginas web: #0c3e11. Sólo el principal y la web de 
+formulario.html tendrá la imagen de fondo según las indicaciones. La web de 
+tabla.html tendrá el color que se indica en este punto.
+
+✓ Tipo de Letra de todo el proyecto: 
+o Web index.html → Facilitada por el cliente. Breaking Bad 
+o Resto de webs: Helvética.
+
+Tamaño Fuentes grandes: 14 pixels.
+o Tamaño Fuentes pequeñas: de 10 pixels
+*/

@@ -1,0 +1,309 @@
+/* Estilos generales */
+body {
+    /*background: url(img/fondo.jpg) no-repeat center center fixed;*/
+    background-size: cover;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.fondogen{
+    background: url(img/fondo.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+.fondotabla{
+    background-color: #0c3e11;
+}
+@font-face {
+    font-family: breaking;
+    src: url(img/Breaking\ Bad.ttf);
+}
+
+/* Título principal */  
+.text1{
+    color: white;
+}
+
+h1 {
+    /*color: white;*/
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Contenedor principal */
+.contenedor {
+    width: 60%;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.384); /* Fondo semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos del formulario */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Fieldsets */
+fieldset {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.7); /* Opacidad para ver el fondo */
+}
+
+/* Títulos de las secciones */
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #444;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Etiquetas e inputs */
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8); /* Transparencia para ver el fondo */
+}
+
+/* Estilos para radio buttons */
+input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+/* Botones */
+button {
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+button[type="reset"] {
+    background-color: #dc3545;
+    color: white;
+}
+
+button[type="reset"]:hover {
+    background-color: #c82333;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .contenedor {
+        width: 90%;
+    }
+
+    input, select, textarea {
+        font-size: 1em;
+    }
+}
+
+/*-------------------------------------------------------*/
+/* Logo de la serie */
+.logo {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Contenedor del poster */
+.poster-container {
+    position: relative;
+    display: inline-block;
+}
+
+
+/* Poster */
+.poster {
+    width: 700px;
+    height: 300px;
+    border: 10px outset brown;
+    border-radius: 22px;
+}
+
+
+/* Zona de "Breaking" */
+#breaking {
+    left: 0;
+}
+
+/* Zona de "Bad" */
+#bad {
+    right: 0;
+}
+
+/* Cita */
+.quote {
+    margin-top: 20px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+
+
+.table{
+    margin: px;
+    text-align: center;
+}
+
+
+/*Formulario*/
+.contenedor{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: baseline;
+}
+.contenedor .form {
+    width: 80%;
+    padding: 5px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(166, 33, 33, 0.1);
+}
+.contenedor .form h2 {
+    font-size: 1.0rem;
+    text-align: left;
+    margin-bottom: 10%;
+}
+
+.contenedor .form input {
+    display: block;
+    margin: 5px auto;
+    padding: 10px;
+    width: 75%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.contenedor .form input:focus {
+    border-color: rgb(7, 7, 18);
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+}
+
+/*Formulario
+.button, input, select, textarea{
+    font-family: inherit;
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*/
+
+
+/*Tamaño imagen Logo: Altura y Anchura: 200 pixels
+✓ Tamaño imagen Poster: Altura: 
+o Tamaño de anchura: 700px
+o Tamaño de altura: 300px
+o El borde tiene un grosor de 10px, tipo outset y color Brown.
+o Tiene que estar redondeado las cuatro esquinas 22px.
+
+Color de fondo páginas web: #0c3e11. Sólo el principal y la web de 
+formulario.html tendrá la imagen de fondo según las indicaciones. La web de 
+tabla.html tendrá el color que se indica en este punto.
+
+✓ Tipo de Letra de todo el proyecto: 
+o Web index.html → Facilitada por el cliente. Breaking Bad 
+o Resto de webs: Helvética.
+
+Tamaño Fuentes grandes: 14 pixels.
+o Tamaño Fuentes pequeñas: de 10 pixels
+*/
+
+
+
+/*-------------------------------------------*/
+
+table {
+    max-width: 80%;
+    table-layout: fixed;
+    background-color: #2B2D23;
+    border-collapse: separate;
+    border-spacing: 10px;
+    margin-bottom: 10px;
+}
+td {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    overflow: hidden;
+}
+td img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+h1 {
+    font-family: Helvetica, sans-serif;
+    font-size: 28px; /* Aumentado */
+    text-align: center;
+    margin: 5px 0;
+}
+h6 {
+    font-family: Helvetica, sans-serif;
+    font-size: 14px; /* Aumentado */
+    text-align: center;
+    margin: 5px 0;
+}
+body {
+    text-align: center;
+}
+.container {
+    justify-content: center;
+    gap: 20px;
+}
+.vacia {
+    background-color: transparent;
+    border: none;
+}
+.color1 { background-color: #B8DD13; }
+.color2 { background-color: #C1C723; }
+.color3 { background-color: #89A418; }
+.color4 { background-color: #C9E746; }
+.color5 { background-color: #8b90627a; }
+.color6 { background-color: #899080; }
+.color7 { background-color: #D4E977; }
+.color8 { background-color: #EFF6CA; }
+.color9 { background-color: #627124; }
+.color10 { background-color: #AB8ECF; }
+
+.image-cell {
+    background-image: url(img/hankschrader.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
